@@ -1,0 +1,28 @@
+.content {
+ padding: 40px 0 0;
+}
+
+.about-title {
+  border-bottom: 3px solid #f7d85c;
+  color: #f8f7f2;
+  display: block;
+  font-size: clamp(2rem, 3vw, 3rem);
+  font-weight: 700;
+  margin: 0 auto 28px;
+  max-width: 1020px;
+  padding-bottom: 14px;
+  text-align: center;
+}
+
+.about-text {
+  color: #f2f2f2;
+  font-size: 21px;
+  margin: 0 auto 24px;
+  max-width: 1000px;
+  text-align: left;
+}
+
+.about-text span {
+  color: #ef4b61;
+  font-weight: 600;
+}

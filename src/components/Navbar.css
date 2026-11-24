@@ -1,0 +1,106 @@
+/* Navbar.css */
+.navbar {
+  align-items: center;
+  background: #1f1f1f;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  color: #fff;
+  display: flex;
+  font-family: Arial, sans-serif;
+  justify-content: space-between;
+  padding: 18px 35px;
+}
+
+.navbar-left {
+  align-items: center;
+  display: flex;
+  gap: 8px;
+}
+
+.logo-icon {
+  color: #ffcc00;
+  font-size: 25px;
+}
+
+.logo-text {
+  color: white;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.navbar-links {
+  align-items: center;
+  display: flex;
+  gap: 28px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links a,
+.navbar-links li {
+  color: #d9d9d9;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 17px;
+  position: relative;
+  text-decoration: none;
+}
+
+
+
+.navbar-links a::after,
+.navbar-links li::after {
+  background-color: #ffcc00;
+  bottom: -3px;
+  content: "";
+  height: 3px;
+  left: 0;
+  position: absolute;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+  width: 100%;
+}
+
+.navbar-links a.active::after,
+.navbar-links a:hover::after,
+.navbar-links li:hover::after {
+  transform: scaleX(1);
+}
+
+.navbar-right {
+  align-items: center;
+  display: flex;
+  gap: 16px;
+}
+
+.sun-icon {
+  color: #fff;
+  font-size: 25px;
+}
+
+.theme-toggle {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  display: inline-flex;
+  padding: 4px;
+}
+
+.logout-btn {
+  background-color: crimson;
+  border: 2px solid crimson;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 8px 24px;
+  transition: 0.3s ease;
+}
+
+.logout-btn:hover {
+  background-color: transparent;
+  color: crimson;
+}
+
+

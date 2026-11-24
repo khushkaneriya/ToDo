@@ -1,0 +1,31 @@
+.app-shell {
+	background: #393939;
+	color: #fafafa;
+	min-height: 100vh;
+}
+
+[data-theme="light"] {
+	background: #f4f4f1;
+	color: #202020;
+}
+
+[data-theme="light"] .todo-container {
+	background: #00000026;
+}
+
+[data-theme="light"] .todo-title,
+[data-theme="light"] .todo-empty,
+[data-theme="light"] .all-todos,
+[data-theme="light"] .about-title,
+[data-theme="light"] .about-text {
+	color: #202020;
+}
+
+[data-theme="light"] .all-todos-item,
+[data-theme="light"] .all-todos-empty {
+	background: #fff;
+}
+
+[data-theme="light"] .all-todos-empty {
+	color: black;
+}

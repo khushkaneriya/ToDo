@@ -1,0 +1,130 @@
+.all-todos {
+	color: #fafafa;
+	font-family: "Segoe UI", sans-serif;
+	margin: 48px auto 0;
+	max-width: 1080px;
+	padding: 0 24px 48px;
+}
+
+.all-todos-title {
+	border-bottom: 4px solid #ffcc00;
+	font-size: 28px;
+	font-weight: 700;
+	margin: 0 0 7px;
+	padding-bottom: 3px;
+	text-align: center;
+}
+
+.all-todos-search {
+	align-items: center;
+	background: #272727;
+	border: 1px solid #555;
+	border-radius: 8px;
+	display: flex;
+	gap: 10px;
+	margin: 20px 9px 16px;
+	padding: 6px 8px 6px 14px;
+	transition: border-color 160ms ease, box-shadow 160ms ease;
+}
+
+.all-todos-search:focus-within {
+	border-color: #ffcc00;
+	
+}
+
+.all-todos-search-input {
+	background: transparent;
+	border: 0;
+	color: #fafafa;
+	flex: 1;
+	font: inherit;
+	min-width: 0;
+	outline: none;
+	padding: 9px 0;
+}
+
+.all-todos-search-input::placeholder {
+	color: #aaa;
+}
+
+.all-todos-search-clear {
+	background: #ffcc00;
+	border: 0;
+	border-radius: 5px;
+	color: #222;
+	cursor: pointer;
+	flex: 0 0 auto;
+	font: inherit;
+	font-size: 14px;
+	font-weight: 600;
+	min-height: 36px;
+	min-width: 64px;
+	padding: 0 12px;
+}
+
+.all-todos-search-clear:hover:not(:disabled) {
+	background: #ffdb4d;
+}
+
+.all-todos-search-clear:focus-visible {
+	outline: 2px solid #fff;
+	outline-offset: 2px;
+}
+
+.all-todos-search-clear:disabled {
+	background: #444;
+	color: #999;
+	cursor: default;
+}
+
+.all-todos-list {
+	display: grid;
+	gap: 9px;
+	list-style: none;
+	margin: 0;
+	padding: 0 9px;
+}
+
+.all-todos-item {
+	align-items: center;
+	background: #272727;
+	border-radius: 8px;
+	display: flex;
+	gap: 16px;
+	justify-content: space-between;
+	min-height: 50px;
+	padding: 10px 15px;
+}
+
+.all-todos-text {
+	font-size: 15px;
+	line-height: 1.4;
+	overflow-wrap: anywhere;
+}
+
+.all-todos-status {
+	border-radius: 11px;
+	color: #fff;
+	flex: 0 0 auto;
+	font-size: 15px;
+	padding: 5px 10px;
+}
+
+.all-todos-status.is-pending {
+	background: #e8103e;
+}
+
+.all-todos-status.is-completed {
+	background: #ffcc00;
+	color: #fff;
+}
+
+.all-todos-empty {
+	background: #272727;
+	border-radius: 8px;
+	color: #d5d5d5;
+	margin: 0 9px;
+	padding: 18px;
+	text-align: center;
+}
+
